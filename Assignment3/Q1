@@ -1,0 +1,12 @@
+//Number Right Triangle
+print("Enter total numbers of row : ",terminator:"")
+var row:Int=Int(readLine() ?? "0")!
+
+for i in 1...row
+{
+   for j in 1...i
+   {
+     print("\(j)    ",terminator:"")
+   }
+   print("\n")
+}

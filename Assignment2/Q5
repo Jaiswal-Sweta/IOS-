@@ -1,0 +1,12 @@
+//Downward Triangle
+print("Enter total numbers of row : ",terminator:"")
+var row:Int=Int(readLine() ?? "0")!
+
+for i in 0...row
+{
+   for _ in stride(from:0,to:row-i,by:1)
+   {
+     print("*    ",terminator:"")
+   }
+   print("\n")
+}

@@ -1,0 +1,27 @@
+//Diamond
+print("Enter total numbers of row : ",terminator:"")
+var row:Int=Int(readLine() ?? "0")!
+for i in 1...row
+{
+   for _ in stride(from:row-i+1,to:1,by:-1)
+   {
+     print("   ",terminator:"")
+   }
+   for _ in 1...i
+   {
+     print("*     ",terminator:"")
+   }
+   print("\n")
+}
+for i in stride(from:row-1,to:0,by:-1)
+{
+   for _ in stride(from:1,to:row-i+1,by:1)
+   {
+     print("   ",terminator:"")
+   }
+   for _ in 1...i
+   {
+     print("*     ",terminator:"")
+   }
+   print("\n")
+}

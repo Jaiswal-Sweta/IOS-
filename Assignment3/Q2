@@ -1,0 +1,13 @@
+//Sequential Number Right Triangle
+print("Enter total numbers of row : ",terminator:"")
+var row:Int=Int(readLine() ?? "0")!
+var k=1;
+for i in 1...row
+{
+   for _ in 1...i
+   {
+     print("\(k)    ",terminator:"")
+     k=k+1
+   }
+   print("\n")
+}

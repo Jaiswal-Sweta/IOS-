@@ -1,0 +1,27 @@
+//Sandglass Pattern
+print("Enter total numbers of row : ",terminator:"")
+var row:Int=Int(readLine() ?? "0")!
+for i in 1...row
+{
+   for _ in 1...i
+   {
+     print(" ",terminator:"")
+   }
+   for _ in stride(from:row,to:i-1,by:-1)
+   {
+     print("* ",terminator:"")
+   }
+   print()
+}
+for i in 1...row
+{
+   for _ in stride(from:row+1,to:i,by:-1)
+   {
+     print(" ",terminator:"")
+   }
+   for _ in 1...i
+   {
+     print("* ",terminator:"")
+   }
+   print()
+}

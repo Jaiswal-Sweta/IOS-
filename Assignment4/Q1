@@ -1,0 +1,39 @@
+    var x=Array<Int>()
+
+    print("Enter total elements in array :")
+    var n:Int=Int(readLine() ?? "0")!
+
+    print("Input \(n) elements in the array : ")
+    for _ in stride(from:0,to:n,by:1)
+    {
+        let num:Int=Int(readLine() ?? "0")!
+        x.append(num)
+    }
+    print(x)
+    var first=x[0]
+    var second=x[0]
+
+    for i in stride(from:0,to:n,by:1)
+    {
+        if (first < x[i]) 
+        {
+            second = first
+            first = x[i]
+        } 
+        else
+        {
+          if (x[i] > second && x[i] != first) 
+          {
+            second = x[i]
+          }
+        }
+    }
+
+    if (second == first)
+    {
+        print("There is no second largest element")
+    }
+    else
+    {
+        print("The Second largest element in the array is: \(second)")
+    }
